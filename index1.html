@@ -44,7 +44,11 @@
         <div class="small-card">
           <div>HDL</div>
           <div class="ob-value" id="hdl">undefined</div>
-        </div>        
+        </div>
+        <div class="small-card">
+          <div>HSCRP</div>
+          <div class="ob-value" id="hscrp">undefined</div>
+        </div>
         <div class="small-card">
           <div>Cholesterol</div>
           <div class="ob-value" id="chol">undefined</div>
@@ -54,10 +58,14 @@
       <div class="big-card">
         <div class="card">
           <div class="title">
-            Conditions
+            Add an Annotation for the Weight Observation
           </div>
-          <ul id="cond_list"></ul>
-
+        <span>  <input class="annotation-box" id="annotation">
+          <button class="annotation-button" id="add">Add</button></span>
+          <div class="annotations">
+          Latest Annotation
+          <li id="note">No annotations</li>
+          </div>
         </div>
 
         <div class="card">
@@ -66,26 +74,16 @@
           </div>
           <ul id="med_list"></ul>
         </div>
-
-        <div class="card">
-          <div class="title">
-            Risks
-          </div>
-          <ul id='blood'></ul>
-          <ul id='bmi_text'></ul>
-        </div>
-
-
       </div>
 
     </main>
   </div>
 
-  <script src='./lib/js/fhir-client.js'></script>
+  <!-- <script src='./lib/js/fhir-client.js'></script> -->
   <!-- <script src="./lib/js/get-data.js"></script> -->
 
   <!-- uncomment below script and comment above script to switch for easy local testing -->
-   <script src="./lib/js/get-data-test.js"></script>
+   <!-- <script src="./lib/js/get-data-test.js"></script> -->
 </body>
 
 </html>
